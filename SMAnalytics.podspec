@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = 'SMAnalytics'
-  s.version      = '0.2.0'
+  s.version      = '0.3.1'
   s.summary      = 'Objective-C library for analytics'
   s.license      = 'MIT'
   s.author       = 'ScaleMonk'

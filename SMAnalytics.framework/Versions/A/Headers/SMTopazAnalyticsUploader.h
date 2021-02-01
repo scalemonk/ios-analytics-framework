@@ -9,7 +9,7 @@
 
 #import <UIKit/UIKit.h>
 
-extern NSString *const kTopAnalyticsKeyResponseBody;
+extern NSString *const kSMTopAnalyticsKeyResponseBody;
 
 @class SMTopazAnalyticsSession;
 

@@ -1,6 +1,6 @@
 #import <Foundation/Foundation.h>
 
-@protocol AnalyticsPreSessionActor
+@protocol SMAnalyticsPreSessionActor
 
 - (void)executePreSessionActionWithCompletion:(void (^)())completion;
 
