@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = 'SMAnalytics'
-  s.version      = '0.3.0'
+  s.version      = '0.2.0'
   s.summary      = 'Objective-C library for analytics'
   s.license      = 'MIT'
   s.author       = 'ScaleMonk'
@@ -12,14 +12,9 @@ Pod::Spec.new do |s|
 
   s.compiler_flags = "-DSM_ANALYTICS_VERSION=\@\\\"%s\\\"" % [s.version.to_s]
   s.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES' }
-  
-  s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
-  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 
   s.default_subspecs = 'Core'
   
-  s.source = { :http => 'https://github.com/scalemonk/ios-analytics-framework/releases/download/0.0.3/SMAnalytics.framework.zip' }
-
   s.subspec 'Core' do |core|
     core.name = 'Core'
     core.vendored_frameworks = "SMAnalytics.framework"
