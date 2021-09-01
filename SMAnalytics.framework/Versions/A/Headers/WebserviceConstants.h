@@ -71,6 +71,7 @@
 #define PARAM_IDENTIFIERS @"ids"          // Identifiers (dictionary)
 #define PARAM_BIRTH_TIME @"b"             // Birth time (Since epoch)
 #define PARAM_TIMEZONE_OFFSET @"tz"       // Device offset from GMT in seconds
+#define PARAM_SCALEMONK_ID @"smid"        // ScaleMonk defined user id
 #define PARAM_DEVICE_MAC @"wmac"
 
 /*****************

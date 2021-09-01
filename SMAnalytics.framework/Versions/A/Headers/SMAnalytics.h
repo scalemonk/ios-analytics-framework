@@ -30,6 +30,11 @@ typedef void (^SMAnalyticsSetupBlock)(SMAnalyticsBuilder *);
 @property(nonatomic, readonly) NSString *firstInstallId;
 
 /**
+ Returns the ScaleMonk ID (ScaleMonk specific user ID).
+ */
+@property(nonatomic, readonly) NSString *scaleMonkId;
+
+/**
  Returns the app version of the first installation.
 
  Example: If the first app version installed was '1.2.3 (10)' and the application is now at

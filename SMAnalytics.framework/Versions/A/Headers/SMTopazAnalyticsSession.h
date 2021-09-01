@@ -87,6 +87,11 @@
 
 #pragma mark Public Methods
 
+/*!
+ @method sharedInstance
+ @abstract Gets the current analytics session object or nil if no one has been created */
++ (SMTopazAnalyticsSession *)sharedInstance;
+
 - (SMTopazAnalyticsSession *)initWithPreSessionActors:(NSArray *)preSessionActors
                                       preUploadActors:(NSArray *)preUploadActors
                                   reinstallAttributes:(NSArray *)recoverable
@@ -282,6 +287,7 @@
 @property(nonatomic, readonly) int numSessions;
 
 @property(nonatomic, readonly) NSString *firstInstallId;
+@property(nonatomic, readonly) NSString *scaleMonkId;
 @property(nonatomic, readonly) NSString *firstInstallAppVersion;
 @property(nonatomic, readonly) NSString *activationDate;
 @property(nonatomic, readonly) NSString *daysActive;
